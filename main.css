@@ -1,3 +1,8 @@
+:root {
+  --purple: hsl(180, 240, 120);
+  --white: #FFFFFF;
+  --black: #000000;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,23 +12,21 @@ html {
   font-size: 100%;
 }
 body {
- 
-body {
   font-family: monospace;
-  color: hsl(180, 240, 120);
-}
-
-ul {
-    font-family: helvetica;
+  background: var(--bg);
+  color: var(--fontColor);
 }
 li {
   list-style: circle;
 }
-
 .list {
   list-style: square;
 }
-
-#msg {
-  font-family: monospace;
+.light-theme {
+  --bg: var(--purple);
+  --fontColor: var(--black);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--purple);
 }
