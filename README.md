@@ -60,10 +60,7 @@ From this point forward, the ellipsis (```) indicates that previously declared c
 
 In the editor, modify the `<title> element so that it resembles the following example.
 
-HTML
-
-
-```
+```html
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -408,7 +405,7 @@ Modify the `<script>` element to load your app.js file as shown in the following
 HTML
 
 
-```css
+```html
 <ul>
   <li class="list">Add visual styles</li>
   <li class="list">Add light and dark themes</li>
@@ -477,7 +474,6 @@ In your CSS file, add a new rule with a .btn class selector for your HTML button
 
 Next, modify the .btn rule to add some styles for the size, shape, appearance, and placement of the button. The following CSS creates a round button to the right of the page heading.
 
-
 ```css
 .btn {
   position: absolute;
@@ -494,7 +490,6 @@ Next, modify the .btn rule to add some styles for the size, shape, appearance, a
 
 Next, update the CSS for the light and dark theme. Define some new variables, --btnBg and --btnFontColor, to specify the button-specific background color and font color.
 
-
 ```css
 .light-theme {
   --bg: var(--green);
@@ -502,7 +497,6 @@ Next, update the CSS for the light and dark theme. Define some new variables, --
   --btnBg: var(--black);
   --btnFontColor: var(--white);
 }
-
 .dark-theme {
   --bg: var(--black);
   --fontColor: var(--green);
@@ -512,6 +506,7 @@ Next, update the CSS for the light and dark theme. Define some new variables, --
 ```
 
 Add an event handler
+
 To make the button do something when you select it, you need an event handler in your JavaScript file. An event handler is a way to run a JavaScript function when an event happened on the page. For the button, let's add an event handler for the click event; the event handler function runs when the click event occurs.
 
 Before you can add the event handler, you need a reference to the button element.
@@ -566,9 +561,10 @@ switcher.addEventListener('click', function() {
 It's a JavaScript convention to use camel case for variable names with more than one word; for example: the variable className.
 
 Console message
+
 As a web developer, you can create hidden messages that won't appear on your webpage, but that you can read in the Developer Tools, in the Console tab. Using console messages is helpful for seeing the result of your code.
 
-Add a call to console.log after the if statement, but inside the event listener.
+Add a call to `console.log` after the if statement, but inside the event listener.
 
 JavaScript
 
@@ -593,7 +589,8 @@ In VS Code, when in a JavaScript file, you can use autocomplete for console.log 
 You can define a text string with single or double quotes around the text.
 
 Open in the browser
-To preview, select index.html, and select Open In Default Browser, or reload the same browser tab by pressing F5.
+
+To preview, select `index.html`, and select Open In Default Browser, or reload the same browser tab by pressing `F5`.
 
 Screenshot of the website showing the new button.
 
@@ -619,54 +616,9 @@ Screenshot of the browser window with the website and the Developer Tools consol
 
 Using the console, you can get interesting insights from your JavaScript code. Add more console messages to understand which parts of your code are getting executed and to know the current values of other variables.
 
-To learn more about the console, check out the Console overview article.
-
-Next unit: Knowledge check
-
-## Unit 6 of 7
-
-Knowledge check
-
-200 XP
-2 minutes
-Select the best response for each question. Then select Check your answers.
-
-Check your knowledge
-
-1. What is the main purpose of HTML? 
-
-HTML is used to provide webpage structure.
-
-HTML is used to style web pages.
-
-User interaction or events.
-2. Which of the following choices is a design principle where you put code into different files? 
-
-Progressive enhancement.
-
-Separation of concerns.
-
-Graceful degradation.
-3. In HTML and CSS, #msg and .list are examples of which type of entities? 
-
-Elements.
-
-Key-value pairs.
-
-Selectors.
-4. In the context of web development, the Console is used for what purpose? 
-
-To open a command shell on the remote user's computer.
-
-To send debugging messages to a web browser.
-
-As a plug-in for previewing web content.
-
-## Unit 7 of 7
-
 ## Summary
 
-In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a web browser. Let's look at all you accomplished:
+In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a web browser.
 
 You downloaded and installed the tools you need for web development, and customized the editor with basic packages.
 You created a project directory and the files to build a website.
@@ -675,34 +627,3 @@ You applied styles to different elements and tested your site in the browser, an
 You added JavaScript to enable custom interaction with the page and switching between themes.
 You learned how to create and use console messages to peek inside your code.
 You're gathering tools and building a foundation as a web developer. You can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
-
-### Learn more
-
-Web development concepts
-Fault tolerance (graceful degradation)
-Separation of concerns
-Progressive enhancement
-Web development references
-HTML5
-W3C - HTML history
-Webhint - Use charset 'Utf-8'
-MDN web docs - What’s in the head?
-MDN web docs - HTML elements reference
-CSS
-MDN web docs - CSS: Cascading Style Sheets
-JavaScript
-MDN web docs - Strict mode
-MDN web docs - JavaScript Reference
-Web development technologies
-Microsoft Edge documentation
-Microsoft Edge Developer Tools
-Inspect, edit, and debug HTML and CSS with the Elements tool
-Console overview
-Azure Static Web Apps
-One way to deploy your website is to use Azure Static Web Apps.
-
-Learning paths for Azure Static Web Apps
-Azure Static Web Apps documentation
-Visual Studio Code documentation
-User interface
-Emmet in Visual Studio Code
