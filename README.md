@@ -17,13 +17,13 @@ Open your website in Visual Studio Code, then open the index.html file by select
 
 In the index.html page, type html:5, and then select Enter. HTML5 template code is added to the file.
 
- Note
+**Note**
 
 If the HTML5 template code is not added to the index.html file, try closing and reopening the file.
 
 Edit your code so that it resembles the following. Then save the file by selecting Control+S on Windows or Command+S on macOS.
 
-HTML
+**HTML**
 
 ```html
 <!DOCTYPE html>
@@ -46,19 +46,19 @@ While we aren't going to delve deeply into the meaning of all the HTML elements,
 
 The character set (charset) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but important takeaway from this exercise is that the VS Code boilerplate provides some sensible defaults.
 
-Edit the head
+## Edit the head
 
-The `<head> element in your HTML code contains information about your website not visible inside the browser tab.
+The `<head>` element in your HTML code contains information about your website not visible inside the browser tab.
 
 The metadata defines data about the HTML document, such as character set, scripts, and which browser the webpage opens in.
 
 The title of a webpage appears at the top of a browser window, and is significant in many ways. For example, the title is used by and displayed in search engines. Let's add a title.
 
- Important
+**Important**
 
-From this point forward, the ellipsis (```) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update your work, but you should not  and paste the ellipsis into your code.
+From this point forward, the ellipsis (```) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update your work, but you should not copy and paste the ellipsis into your code.
 
-In the editor, modify the `<title> element so that it resembles the following example.
+In the editor, modify the `<title>` element so that it resembles the following example.
 
 ```html
 <head>
@@ -72,15 +72,15 @@ To apply styles to the HTML elements on the webpage, you could write the CSS cod
 
 In the VS Code editor, add a blank line after the <title> element, type link, and then select Enter. VS Code should add the following line to your index.html file.
 
-HTML
+**HTML**
 
 ```html
 <link rel="stylesheet" href="">
 ```
 
-Update the href= to href="main.css", and save the file by selecting Control+S on Windows or Command+S on macOS.
+Update the `href=` to `href="main.css"`, and save the file by selecting Control+S on Windows or Command+S on macOS.
 
-HTML
+**HTML**
 
 ```html
 <head>
@@ -92,11 +92,11 @@ HTML
 </head>
 ```
 
-Edit the body
+## Edit the body
 
-Let's start filling in the `<body> element now.
+Let's start filling in the `<body>` element now.
 
-The `<body> element contains the content of your website visible to your customers in their browsers.
+The `<body>` element contains the content of your website visible to your customers in their browsers.
 
 Add a heading `<h1> element, followed by a paragraph `<p> element, and then create an unordered list `<ul> that contains several list item `<li> elements.
 
@@ -126,25 +126,26 @@ HTML
 </html>
 ```
 
-An ID attribute (used in the `<p> element) can be used for styling one element, while the class attribute (used in the `<li> element) is for styling all elements of the same class.
+An ID attribute (used in the `<p>` element) can be used for styling one element, while the class attribute (used in the `<li>` element) is for styling all elements of the same class.
 
 Before the next step, make sure your file is saved by selecting Control+S or Command+S.
 
-Open in browser
+## Open in browser
 
-You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with https://, your browser points to the local file path, which should look similar to C:/dev/simple-website/index.html.
+You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path, which should look similar to `C:/dev/simple-website/index.html`.
 
-To preview using Visual Studio Code, right-click index.html, and select Open In Default Browser, or select the index.html file and use the keyboard shortcut Alt+B.
+To preview using Visual Studio Code, right-click `index.html`, and select Open In Default Browser, or select the `index.html` file and use the keyboard shortcut `Alt+B`.
 
 Screenshot of the Open in Browser context menu item in Visual Studio Code.
 
- Important
+**Important**
 
 If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a Visual Studio Code dialog appears, select Yes, I trust the authors; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so it's safe.
 
 The webpage opens in your default browser.
 
-View the page using developer tools
+**View the page using developer tools**
+
 You can inspect a webpage by using the developer tools in your browser. Let's give it a try.
 
 Open Developer Tools by right-clicking in the web page and selecting Inspect, or try these shortcuts:
@@ -159,15 +160,13 @@ To learn more about opening Developer Tools and the main available features, che
 
 Select the Elements tab.
 
-Screenshot showing a browser window with the website, and the Developer Tools next to it with the Elements tab selected.
-
 Move your mouse over the HTML elements displayed in the Elements tab, and expand the contents of the various elements.
 
 The Elements tab in developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it's often important to see how the browser interprets your source code.
 
 Inspecting the page in a browser provides all sorts of useful information and can help you troubleshoot problems. You can also view CSS details with the inspector, as you'll see in the next section.
 
-Next unit: Exercise - Style your HTML with CSS
+**Next unit: Exercise - Style your HTML with CSS**
 
 ## Unit 4 of 7
 
@@ -179,7 +178,7 @@ You can apply styles to specific elements, all elements of a specific type, or u
 
 In this exercise, you'll apply CSS styles to HTML page elements and add some CSS code to define your light and dark themes. You'll also check the results in your browser's developer tools.
 
-External CSS
+## External CSS
 In the previous unit about HTML, you linked to an external CSS file from HTML.
 
 ```html
@@ -195,12 +194,12 @@ One benefit of external CSS is that multiple HTML pages can link to the same CSS
 
 As described previously, you can also write CSS directly in HTML, which is called internal CSS. Even for a basic website, there are so many CSS rules the HTML page can become cluttered quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
 
-CSS rules
+## CSS rules
 CSS rules are how you apply styles to HTML elements. CSS rules have a selector which is used to express which element, or elements, should the styles be applied to.
 
-In Visual Studio Code, open the main.css file, and enter the following.
+In Visual Studio Code, open the `main.css` file, and enter the following.
 
-css
+**CSS**
 
 ```css
 body {
@@ -214,11 +213,12 @@ ul {
 
 The above code snippet contains two rules. Each rule has:
 
-A selector. body and ul are the selectors of the two rules and are used to select which element(s) the styles apply to.
-An opening curly brace ({).
-A list of style declarations that determine what the selected elements should look like.
-A closing curly brace (}).
-For example, the ul selector selects the `<ul> HTML element in the page, to apply styles to it. The declaration is `font-family: helvetica` and determines what the style should be. The property name is `font-family`, and the value is `helvetica`.
+- A selector. `body` and `ul` are the selectors of the two rules and are used to select which element(s) the styles apply to.
+- An opening curly brace ({).
+- A list of style declarations that determine what the selected elements should look like.
+- A closing curly brace (}).
+
+For example, the `ul` selector selects the `<ul>` HTML element in the page, to apply styles to it. The declaration is `font-family: helvetica` and determines what the style should be. The property name is `font-family`, and the value is `helvetica`.
 
 As you'll see next, you can define your own custom names for elements.
 
@@ -228,7 +228,7 @@ ID and class selectors enable you to apply styles to custom attribute names in y
 
 Copy the following code into your CSS file, after the closing curly brace for ul selector that you added previously.
 
-css
+**CSS**
 
 ```css
 li {
@@ -243,11 +243,12 @@ li {
   font-family: monospace;
 }
 ```
-The preceding code contains three CSS rules, with the last two rules using custom attributes to select elements: .list and #msg.
 
-.list is a class selector. Each HTML element that contains a class attribute set to list will get the styles that are defined within this selector.
+The preceding code contains three CSS rules, with the last two rules using custom attributes to select elements: `.list` and `#msg`.
 
-#msg is an ID selector. The HTML element that has its id attribute set to msg will get the styles that are defined within this selector.
+`.list` is a class selector. Each HTML element that contains a class attribute set to list will get the styles that are defined within this selector.
+
+`#msg` is an ID selector. The HTML element that has its id attribute set to msg will get the styles that are defined within this selector.
 
 The names that you use for your selectors can be arbitrary, as long as they match what you've defined in the HTML.
 
@@ -257,7 +258,7 @@ View in browser
 
 To preview using VS Code, right-click the file name index.html, and then select Open In Default Browser.
 
- Important
+**Important**
 
 Even though you were just editing the main.css file, to preview the changes, you should select the index.html file.
 
@@ -265,18 +266,18 @@ The webpage opens in your default browser.
 
 Screenshot of the website with the font styles applied.
 
-Are the font styles what you expected to see? It's interesting how styles applied to the `<body> are inherited on the `<h1> element. We didn't define anything for `<h1>, but it still got the font that was defined on `<body>. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li> elements have a different font, overriding the one set on `<body> because they're also descendants of the `<ul> element which you defined a style for.
+Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>`elements have a different font, overriding the one set on `<body>` because they're also descendants of the `<ul>` element which you defined a style for.
 
 Note that using Open In Default Browser in VS Code opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
 
 To reload the tab press F5, which is the refresh keyboard shortcut, or press Ctrl+R on Windows or Linux, and Command+R on a Mac.
 
-Add a light theme
+## Add a light theme
 Next, you'll add support for a color theme for your website. Begin by defining a light-colored theme using hex color codes.
 
 In your CSS file, add the following code at the end of the file.
 
-css
+**CSS**
 
 ```css
 .light-theme {
@@ -284,49 +285,43 @@ css
   background: #00FF00;
 }
 ```
+
 In this example, #000000 specifies black for the font color, and #00FF00 specifies green for the background color.
 
-In your HTML file, update the `<body> element with a class name, light-theme, so the class selector for light theme will apply the styles correctly.
+In your HTML file, update the `<body>` element with a class name, light-theme, so the class selector for light theme will apply the styles correctly.
 
-HTML
+**HTML**
 
 ```html
 <body class="light-theme">
 ```
 
-View in browser
+## View in browser
 
 To preview using Visual Studio Code, right-click index.html, and then select Open In Default Browser or reload the previous tab by pressing F5.
 
 Notice that the light theme using a green background appears.
 
-Screenshot of the website with its light theme applied.
+## View applied CSS
 
-View applied CSS
-On the browser view, open Developer Tools.
-
-Right click the page and select Inspect, or select the shortcut F12 or Ctrl-Shift+I.
-
-Select the Elements tab and, inside the Elements tab, select the Styles tab (it should already be selected by default).
-
-Hover over the various HTML elements, and as you select a few elements, notice how the developer tools display which styles are applied to them in the Styles tab.
-
-Select the `<body> element. Note the light-theme applied.
-
-Select the unordered list `<ul> element. Note the custom style font-family: helvetica;, which overrides the style for the `<body> element.
-
-Screenshot of the website with its light theme applied and the Developer Tools next to it showing the Elements panel with the HTML and CSS code.
+1. On the browser view, open Developer Tools.
+2. Right click the page and select Inspect, or select the shortcut F12 or Ctrl-Shift+I.
+3. Select the Elements tab and, inside the Elements tab, select the Styles tab (it should already be selected by default).
+4. Hover over the various HTML elements, and as you select a few elements, notice how the developer tools display which styles are applied to them in the Styles tab.
+5. Select the `<body>` element. Note the light-theme applied.
+6. Select the unordered list `<ul>` element. Note the custom style font-family: helvetica;, which overrides the style for the `<body>` element.
 
 To learn more about viewing CSS styles in Developer Tools, check out the Get started viewing and changing CSS article.
 
-Add a dark theme
+## Add a dark theme
+
 For the dark theme, you'll set up the infrastructure in preparation for the next unit, in which you'll enable theme switching on the web page.
 
 To add support for a dark theme to your CSS, use the following steps.
 
 Add some constants to the page root at the top of your CSS file.
 
-css
+**CSS**
 
 ```css
 :root {
@@ -336,11 +331,11 @@ css
 }
 ```
 
-The `:root` selector represents the `<html> element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in a CSS rule with the :root selector. In this example, you've defined three color variables. You'll next be able to use these variables in other CSS rules.
+The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in a CSS rule with the :root selector. In this example, you've defined three color variables. You'll next be able to use these variables in other CSS rules.
 
 At the end of the CSS file, replace the light-theme rule with the following code to update it and to add the dark-theme selector.
 
-css
+**CSS**
 
 ```css
 .light-theme {
@@ -357,7 +352,7 @@ In the preceding code, you defined two new variables, bg and fontColor, which sp
 
 Next, in your CSS file, replace the current body selector with the following code.
 
-css
+**CSS**
 
 ```css
 body {
@@ -367,19 +362,19 @@ body {
 }
 ```
 
-In this example, you use the body selector to set the background and color properties and, because the elements that are visible on the web page are all inside the `<body> element, they'll inherit the colors set on `<body>.
+In this example, you use the body selector to set the background and color properties and, because the elements that are visible on the web page are all inside the `<body>` element, they'll inherit the colors set on `<body>`.
 
-In your CSS file, remove the rules with the #msg and ul selectors so that they also inherit the same font from `<body>.
+In your CSS file, remove the rules with the #msg and ul selectors so that they also inherit the same font from `<body>`.
 
-To view the dark theme, open the file index.html and manually edit the default theme in the `<body> class attribute to dark theme (dark-theme), and then reload the page in the browser.
+To view the dark theme, open the file index.html and manually edit the default theme in the `<body>` class attribute to dark theme (dark-theme), and then reload the page in the browser.
 
 Screenshot of the website with its dark theme applied and the Developer Tools next to it.
 
-Edit the `<body> class attribute to switch the default back to light theme.
+Edit the `<body>` class attribute to switch the default back to light theme.
 
 In the next unit, you'll use JavaScript to provide interactivity and support the switching of themes.
 
-Next unit: Exercise - Add interactivity with JavaScript
+**Next unit: Exercise - Add interactivity with JavaScript**
 
 ## Unit 5 of 7
 
